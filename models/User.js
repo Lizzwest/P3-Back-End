@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 // Game schema
-let GameSchema = new mongoose.Schema({
+let gameSchema = new mongoose.Schema({
     name: String,
     faved: [userId],
     author: {
@@ -16,7 +16,7 @@ let GameSchema = new mongoose.Schema({
 })
 
 // User schema
-const UserSchema = new Schema({
+const userSchema = new Schema({
   name: {
     type: String,
     required: true
@@ -29,7 +29,7 @@ const UserSchema = new Schema({
     type: String,
     required: true
   },
-  favesGames: [GameSchema]
+  favesGames: [gameSchema]
 });
 
-module.exports = User = mongoose.model('User', UserSchema);
+module.exports = User = mongoose.model('User', userSchema);

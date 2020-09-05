@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const AuthorSchema = new mongoose.Schema({
+const authorSchema = new mongoose.Schema({
     name: String,
     faved: [userId],
     author_id: String,
@@ -11,4 +11,4 @@ const AuthorSchema = new mongoose.Schema({
     gameUrl: String
 })
 
-module.exports = Author = mongoose.model('Author', AuthorSchema); 
+module.exports = Author = mongoose.model('Author', authorSchema); 
